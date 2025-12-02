@@ -1,11 +1,27 @@
 
 /* Your CSS Code here. */
-. holder{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-wrap:nowrap;
+.holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* items stay in one row → squashed */
 }
-. item:nth-child(1){
+.item:nth-child(1){
+	height:100px;
+	width:100px;
 	background-color:green;
+	font-size:50px;
 }
+.item:nth-child(2){
+	height:100px;
+	width:100px;
+	background-color:red;
+	font-size:50px;
+}
+.item:nth-child(3){
+	height:100px;
+	width:100px;
+	background-color:blue;
+	font-size:50px;
+}
+
