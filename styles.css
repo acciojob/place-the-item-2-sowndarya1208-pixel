@@ -1,27 +1,50 @@
 
 /* Your CSS Code here. */
-.holder {
+.holder:nth-of-type(1) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap; /* items stay in one row → squashed */
 }
-.item:nth-child(1){
+.holder:nth-of-type(1) .item:nth-child(1){
 	height:100px;
 	width:100px;
 	background-color:green;
 	font-size:50px;
 }
-.item:nth-child(2){
+.holder:nth-of-type(1) .item:nth-child(2){
 	height:100px;
 	width:100px;
 	background-color:red;
 	font-size:50px;
 }
-.item:nth-child(3){
+.holder:nth-of-type(1) .item:nth-child(3){
 	height:100px;
 	width:100px;
 	background-color:blue;
 	font-size:50px;
 }
-
+.holder:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* items stay in one row → squashed */
+}
+.holder:nth-of-type(2)  .item:nth-child(-n+5) {
+	height:100px;
+	width:100px;
+	background-color:green;
+	font-size:50px;
+}
+.holder:nth-of-type(2) .item:nth-child(6){
+	height:100px;
+	width:100px;
+	background-color:red;
+	font-size:50px;
+}
+.holder:nth-of-type(2) .item:nth-child(7){
+	height:100px;
+	width:100px;
+	background-color:blue;
+	font-size:50px;
+}
